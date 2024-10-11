@@ -10,17 +10,23 @@ import { FaTwitter } from "react-icons/fa"; // X (formerly Twitter)
 const IconBar = (): JSX.Element => {
     return (
         <>
-            <div className="border-2 border-customBlack rounded-md text-4xl w-14 ml-4 hidden sm:block sm:absolute top-72">
+            <div className="border-2 border-customBlack rounded-md text-4xl w-20 ml-4 hidden sm:block sm:absolute top-64 mt-2">
                 <ul>
-                    <Link to="github.com">
-                        <li>
-                            <FaGithub className="mx-auto my-7 hover:animate-pulse text-slate-900" />
-                            <FaLinkedin className="mx-auto my-7 hover:animate-pulse text-slate-900" />
-                            <FaYoutube className="mx-auto my-7 hover:animate-pulse text-slate-900" />
-                            <FaItchIo className="mx-auto my-7 hover:animate-pulse text-slate-900" />
-                            <FaTwitter className="mx-auto my-7 hover:animate-pulse text-slate-900" />
-                        </li>
-                    </Link>
+                    <li>
+                        <FaGithub className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                    </li>
+                    <li>
+                        <FaLinkedin className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                    </li>
+                    <li>
+                        <FaYoutube className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                    </li>
+                    <li>
+                        <FaItchIo className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                    </li>
+                    <li>
+                        <FaTwitter className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                    </li>
                 </ul>
             </div>
         </>

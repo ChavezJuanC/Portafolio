@@ -5,10 +5,8 @@ import MobileIcons from "../OtherComponents/MobileIcons";
 const Home = (): JSX.Element => {
     return (
         <div className="">
-            <div className="flex-none">
-                <IconBar />
-            </div>
-            <div className="relative top-16 md:top-24 lg:top-52 grid justify-center items-center text-center lg:grid-cols-2 lg:gap-0 lg:text-left">
+            <IconBar />
+            <div className="relative top-16 md:top-24 lg:top-52 grid justify-center items-center text-center lg:grid-cols-2 lg:gap-0 lg:text-left w-3/4 mx-auto">
                 <img
                     src="src/assets/Images/Photo.png"
                     alt="Photo"
@@ -39,4 +37,4 @@ const Home = (): JSX.Element => {
 export default Home;
 
 //NEXT STEPS//
-//add some responsiveness to the logo menus 
+//add some responsiveness to the logo menus
