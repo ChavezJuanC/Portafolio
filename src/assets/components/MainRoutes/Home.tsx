@@ -1,5 +1,6 @@
 import React from "react";
 import IconBar from "../OtherComponents/IconBar";
+import MobileIcons from "../OtherComponents/MobileIcons";
 
 const Home = (): JSX.Element => {
     return (
@@ -7,7 +8,7 @@ const Home = (): JSX.Element => {
             <div className="flex-none">
                 <IconBar />
             </div>
-            <div className="relative top-16 md:top-24 lg:top-44 grid justify-center items-center text-center lg:grid-cols-2 lg:gap-0 lg:text-left">
+            <div className="relative top-16 md:top-24 lg:top-52 grid justify-center items-center text-center lg:grid-cols-2 lg:gap-0 lg:text-left">
                 <img
                     src="src/assets/Images/Photo.png"
                     alt="Photo"
@@ -28,6 +29,9 @@ const Home = (): JSX.Element => {
                     </button>
                 </div>
             </div>
+            <div>
+                <MobileIcons />
+            </div>
         </div>
     );
 };
@@ -35,5 +39,4 @@ const Home = (): JSX.Element => {
 export default Home;
 
 //NEXT STEPS//
-
-//Ajdust the margins and posotioning based on size default md: lg://
+//add some responsiveness to the logo menus 
