@@ -13,10 +13,17 @@ const IconBar = (): JSX.Element => {
             <div className="border-2 border-customBlack rounded-md text-4xl w-20 ml-4 hidden sm:block sm:absolute top-64 mt-2">
                 <ul>
                     <li>
-                        <FaGithub className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        <a href="https://www.github.com" aria-label="GitHub">
+                            <FaGithub className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        </a>
                     </li>
                     <li>
-                        <FaLinkedin className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        <a
+                            href="https://www.linkedin.com"
+                            aria-label="LinkedIn"
+                        >
+                            <FaLinkedin className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        </a>
                     </li>
                     <li>
                         <FaYoutube className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
