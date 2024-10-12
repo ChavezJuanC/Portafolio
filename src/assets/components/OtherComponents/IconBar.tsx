@@ -26,13 +26,19 @@ const IconBar = (): JSX.Element => {
                         </a>
                     </li>
                     <li>
-                        <FaYoutube className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        <a href="https://www.youtube.com" aria-label="Youtube">
+                            <FaYoutube className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        </a>
                     </li>
                     <li>
+                        <a href="https://www.itch.io" aria-label="Itch.io">
                         <FaItchIo className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        </a>
                     </li>
                     <li>
-                        <FaTwitter className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        <a href="https://www.x.com" aria-label="X">
+                            <FaTwitter className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                        </a>
                     </li>
                 </ul>
             </div>
