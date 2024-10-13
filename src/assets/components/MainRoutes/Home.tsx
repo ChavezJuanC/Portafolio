@@ -1,6 +1,8 @@
 import React from "react";
 import IconBar from "../OtherComponents/IconBar";
 import MobileIcons from "../OtherComponents/MobileIcons";
+import MobileFooter from "../OtherComponents/MobileFooter";
+import { Link } from "react-router-dom";
 
 const Home = (): JSX.Element => {
     return (
@@ -19,16 +21,23 @@ const Home = (): JSX.Element => {
                         </span>
                         <br />
                         <span className="text-2xl text-customBlack">
-                            Full Stack Web Dev and hobbyist Game Dev.
+                            Full Stack Web Dev and Hobbyist Game Dev.
                         </span>
                     </div>
-                    <button className="border-2 hover:border-black hover:shadow-2xl text-customBlack rounded-lg border-customBlack text-xl px-2 py-0.5 font-semibold mt-4 lg:mt-0 self-center lg:self-end w-32 relative lg:right-6">
+                    <Link
+                        className="border-2 hover:border-black hover:shadow-2xl text-customBlack rounded-lg border-customBlack text-xl px-2 py-0.5
+                        font-semibold mt-4 lg:mt-0 self-center lg:self-end w-32 relative lg:right-6 text-center"
+                        to="/contact"
+                    >
                         Contact
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>
                 <MobileIcons />
+            </div>
+            <div>
+                <MobileFooter />
             </div>
         </div>
     );
@@ -37,6 +46,4 @@ const Home = (): JSX.Element => {
 export default Home;
 
 //NEXT STEPS//
-//Add links to the the mobile section.
-//Create Hyperlink areas for about sections etc...
 //finish the about me section
