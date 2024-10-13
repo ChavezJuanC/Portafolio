@@ -37,4 +37,6 @@ const Home = (): JSX.Element => {
 export default Home;
 
 //NEXT STEPS//
-//add some responsiveness to the logo menus
+//Add links to the the mobile section.
+//Create Hyperlink areas for about sections etc...
+//finish the about me section
