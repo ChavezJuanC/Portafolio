@@ -1,8 +1,14 @@
 import React from "react";
-import IconBar from "../OtherComponents/IconBar";
+import ContactForm from "../OtherComponents/ContactForm";
 
 const Contact = (): JSX.Element => {
-    return <div>Contact </div>;
+    return (
+        <div>
+            <div className="mt-10 md:mt-20">
+                <ContactForm />
+            </div>
+        </div>
+    );
 };
 
 export default Contact;
