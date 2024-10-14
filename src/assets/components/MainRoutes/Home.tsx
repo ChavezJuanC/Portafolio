@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
                 <div className="flex flex-col items-center lg:items-start max-w-96 mt-14 lg:my-auto lg:ml-5">
                     <div className="font-bold">
                         <span className="text-4xl text-customOrange">
-                            Hey, this is Juan!{" "}
+                            Hey, this is Juan!
                         </span>
                         <br />
                         <span className="text-2xl text-customBlack">
@@ -44,6 +44,3 @@ const Home = (): JSX.Element => {
 };
 
 export default Home;
-
-//NEXT STEPS//
-//fix bg
