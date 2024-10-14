@@ -32,7 +32,7 @@ const IconBar = (): JSX.Element => {
                     </li>
                     <li>
                         <a href="https://www.itch.io" aria-label="Itch.io">
-                        <FaItchIo className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
+                            <FaItchIo className="mx-auto my-10 hover:animate-pulse text-customBlack hover:text-customOrange" />
                         </a>
                     </li>
                     <li>

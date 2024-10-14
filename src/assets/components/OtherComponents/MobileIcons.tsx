@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa"; // X (formerly Twitter)
 
 const MobileIcons = (): JSX.Element => {
     return (
-        <ul className="flex flex-wrap justify-center relative top-28 mx-auto items-center text-customBlack font-semibold text-xl sm:hidden">
+        <ul className="flex flex-wrap justify-center relative sm:top-44 top-28 mx-auto items-center text-customBlack font-semibold text-xl sm:hidden">
             <li>
                 <a href="https://www.github.com" aria-label="GitHub">
                     <FaGithub className="mx-4 hover:text-customOrange hover:font-bold" />

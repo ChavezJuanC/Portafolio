@@ -46,4 +46,4 @@ const Home = (): JSX.Element => {
 export default Home;
 
 //NEXT STEPS//
-//finish the about me section
+//fix bg

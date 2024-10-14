@@ -6,6 +6,7 @@ import Contact from "./assets/components/MainRoutes/Contact";
 import Projects from "./assets/components/MainRoutes/Projects";
 import Skills from "./assets/components/MainRoutes/Skills";
 import Navbar from "./assets/components/OtherComponents/Navbar";
+import MobileFooter from "./assets/components/OtherComponents/MobileFooter";
 
 const App = (): JSX.Element => {
     return (
