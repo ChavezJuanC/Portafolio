@@ -1,5 +1,6 @@
 import React, { FormEvent, useEffect, useState } from "react";
-import emailjs, { EmailJSResponseStatus } from "emailjs-com";
+import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = (): JSX.Element => {
     useEffect(() => {
@@ -47,9 +48,9 @@ const ContactForm = (): JSX.Element => {
 
     const sendForm = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault(); // Properly typed as FormEvent
-        const contact_service_id: string = "contact_service"
-        const contact_form_id: string = "contact_form"
-        const public_key: string = ""
+        const contact_service_id: string = "contact_service";
+        const contact_form_id: string = "contact_form";
+        const public_key: string = "";
 
         try {
             // Send form data via EmailJS with the dynamically added contact_number
@@ -60,8 +61,9 @@ const ContactForm = (): JSX.Element => {
                 public_key
             );
             //debug
-            console.log(res);
+            toast.success("Contact Form Sent");
         } catch (error: any) {
+            toast.error("Error Sending Form'");
             console.error(error.text);
         }
     };
@@ -149,6 +151,7 @@ const ContactForm = (): JSX.Element => {
             >
                 Send
             </button>
+            <Toaster />
         </form>
     );
 };
@@ -157,7 +160,7 @@ export default ContactForm;
 
 //To Do
 /*
-- Implement toast alerts for form sent success/error."
+
 - Configure environment variable management.
 
 */
